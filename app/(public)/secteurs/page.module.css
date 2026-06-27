@@ -1,0 +1,205 @@
+.secteursPage {
+  padding-top: var(--spacing-16);
+  padding-bottom: var(--spacing-24);
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--spacing-16) auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-6);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-16);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImage {
+  height: 200px;
+  background: linear-gradient(135deg, #1f2937, #4b5563);
+  position: relative;
+}
+
+.cardTags {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.cardContent {
+  padding: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-6);
+}
+
+.infoSection {
+  margin-bottom: var(--spacing-4);
+}
+
+.infoTitle {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.infoText {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.casUsage {
+  margin-top: auto;
+  padding-top: var(--spacing-4);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.casLabel {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.casText {
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.ngoSection {
+  background-color: var(--color-bg-alt);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-12);
+  margin-top: var(--spacing-16);
+}
+
+.ngoContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-12);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .ngoContent {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.ngoText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.ngoLabel {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 0.875rem;
+}
+
+.ngoTitle {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.ngoFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.ngoFeature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.ngoIcon {
+  font-size: 1.5rem;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.ngoFeatureTitle {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.ngoFeatureText {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.ngoResult {
+  background-color: white;
+  padding: var(--spacing-4);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-primary);
+  font-size: 0.95rem;
+}
+
+.ngoImagePlaceholder {
+  height: 400px;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+}

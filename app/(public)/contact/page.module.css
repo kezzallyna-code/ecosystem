@@ -1,0 +1,252 @@
+.contactPage {
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+.heroSection {
+  text-align: center;
+  padding: var(--spacing-16) var(--spacing-4);
+  background-color: white;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-4);
+}
+
+.textGreen {
+  color: var(--color-primary);
+}
+
+.heroDesc {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mainSection {
+  padding: var(--spacing-12) var(--spacing-4);
+}
+
+.splitLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-16);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.formCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.formCard {
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-sm);
+  background-color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.inputRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-4);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-8);
+  color: var(--color-text-main);
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  margin-bottom: var(--spacing-10);
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.infoIcon {
+  width: 40px;
+  height: 40px;
+  background-color: #d1fae5;
+  color: #047857;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.infoLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 2px;
+}
+
+.infoValue {
+  font-weight: 600;
+  color: var(--color-text-main);
+  font-size: 0.95rem;
+}
+
+.socialsSection {
+  margin-bottom: var(--spacing-10);
+}
+
+.socialsLabel {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--color-text-main);
+}
+
+.socialsList {
+  display: flex;
+  gap: 12px;
+}
+
+.socialIcon {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.socialIcon:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-bg-alt);
+}
+
+.quoteCard {
+  background-color: #ecfdf5;
+  color: #064e3b;
+  padding: 20px;
+  border-left: 4px solid #10b981;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.mapSection {
+  padding: var(--spacing-12) 0;
+  background-color: white;
+}
+
+.sectionTitleCenter {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-10);
+}
+
+.mapVisualContainer {
+  width: 100%;
+  height: 400px;
+  background-color: #e5e7eb;
+}
+
+.fauxMap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* Faux map background */
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+    repeating-linear-gradient(45deg, #d1d5db 25%, transparent 25%, transparent 75%, #d1d5db 75%, #d1d5db),
+    repeating-linear-gradient(45deg, #d1d5db 25%, #e5e7eb 25%, #e5e7eb 75%, #d1d5db 75%, #d1d5db);
+  background-position: 0 0, 10px 10px;
+  background-size: 100% 100%, 20px 20px, 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapPin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.pinIcon {
+  width: 48px;
+  height: 48px;
+  background-color: #047857;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: 4px solid white;
+  box-shadow: var(--shadow-lg);
+}
+
+.pinLabel {
+  background-color: white;
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #047857;
+  box-shadow: var(--shadow-md);
+}
+
+.faqSection {
+  padding: var(--spacing-16) var(--spacing-4);
+  background-color: #fafafa;
+}
+
+.faqContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .splitLayout {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-12);
+  }
+}
+@media (max-width: 600px) {
+  .inputRow {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,306 @@
+.pageContainer {
+  padding: var(--spacing-16) var(--spacing-8);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: var(--spacing-16);
+}
+
+.topBadge {
+  margin-bottom: var(--spacing-6);
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-4);
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-8);
+}
+
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: var(--spacing-12);
+}
+
+.toggleLabel {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.activeLabel {
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
+.toggleSwitch {
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.toggleOn {
+  background-color: var(--color-primary);
+}
+
+.toggleOn .toggleKnob {
+  left: 22px;
+}
+
+.toggleOff {
+  background-color: var(--color-border);
+}
+
+.toggleOff .toggleKnob {
+  left: 2px;
+}
+
+.toggleKnob {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  transition: left 0.2s;
+}
+
+.savingBadge {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-8);
+  width: 100%;
+  align-items: flex-end;
+}
+
+.pricingCard {
+  position: relative;
+  border: 1px solid var(--color-border-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.cardLight {
+  background-color: white;
+}
+
+.cardDark {
+  background-color: #047857;
+  color: white;
+  border: none;
+  transform: scale(1.05); /* Make the popular one slightly larger */
+  z-index: 10;
+  box-shadow: var(--shadow-xl);
+}
+
+.planBadgeWrap {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.planHeader {
+  margin-bottom: var(--spacing-8);
+  text-align: left;
+}
+
+.planName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.planDesc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-6);
+}
+
+.cardDark .planDesc {
+  color: rgba(255,255,255,0.8);
+}
+
+.planPriceWrap {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.planPrice {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.planPeriod {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.cardDark .planPeriod {
+  color: rgba(255,255,255,0.8);
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: var(--spacing-8);
+  flex: 1;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.cardLight .featureItem {
+  color: var(--color-text-main);
+}
+
+.cardDark .featureItem {
+  color: white;
+}
+
+.checkIcon {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.cardDark .checkIcon {
+  color: #6ee7b7; /* lighter green for dark bg */
+}
+
+.btnWrapper {
+  margin-top: auto;
+}
+
+.sectionTitleCenter {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-12);
+  color: var(--color-text-main);
+}
+
+.comparisonSection {
+  margin-bottom: var(--spacing-16);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.compareTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.compareTable th {
+  padding: 16px;
+  border-bottom: 2px solid var(--color-border);
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.compareTable td {
+  padding: 16px;
+  border-bottom: 1px solid var(--color-border-light);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.featureCell {
+  font-weight: 500;
+  color: var(--color-text-main) !important;
+}
+
+.proCell {
+  color: var(--color-primary) !important;
+  font-weight: 600;
+}
+
+.entCell {
+  color: var(--color-primary) !important;
+}
+
+.faqSection {
+  margin-bottom: var(--spacing-16);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaSection {
+  margin-bottom: var(--spacing-8);
+}
+
+.ctaCard {
+  background-color: #047857;
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-12);
+  text-align: center;
+  color: white;
+}
+
+.ctaTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-4);
+}
+
+.ctaDesc {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: var(--spacing-8);
+}
+
+.ctaActions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .pricingGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+  }
+  
+  .cardDark {
+    transform: none;
+  }
+}
